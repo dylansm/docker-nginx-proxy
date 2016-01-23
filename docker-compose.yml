@@ -1,0 +1,7 @@
+nginx:
+  build: ./etc/docker/nginx-proxy
+  volumes:
+    - /var/run/docker.sock:/tmp/docker.sock
+  ports:
+    - "80:80"
+  restart: unless-stopped
