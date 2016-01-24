@@ -1,5 +1,5 @@
 nginx:
-  build: ./etc/docker/nginx-proxy
+  image: dylansm/docker-nginx-proxy
   volumes:
     - /var/run/docker.sock:/tmp/docker.sock
   ports:
